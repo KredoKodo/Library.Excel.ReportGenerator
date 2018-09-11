@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Authors>Joshua Andrews</Authors>
+    <Company>Kredo Kodo, Inc.</Company>
+    <Product>Kredo Kodo Excel Report Generation Library Tests</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.93.1" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+    <PackageReference Include="Shouldly" Version="3.0.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KredoKodo.Library.Excel.ReportGenerator\KredoKodo.Library.Excel.ReportGenerator.csproj" />
+  </ItemGroup>
+
+</Project>
