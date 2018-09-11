@@ -32,17 +32,19 @@ Let's say you have two DataTable objects to work with representing animals held 
 
 Here's an example of how to take those two DataTable objects and generate such a report:
 
-> var reportBytes = reportGenerator
->                       .AddWorksheet(monkeyData, "Monkeys")
->                           .ConfigureColumn("name_row", "Animal Name")
->                           .ConfigureColumn("id_row", "Animal ID #")
->                           .ConfigureColumn("sex_row", "Animal Sex")
->                           .FinalizeWorksheet(12)
->                       .AddWorksheet(kangarooData, "Kangaroos")
->                           .ConfigureColumn("name_row", "Animal Name")
->                           .ConfigureColumn("id_row", "Animal ID #")
->                           .FinalizeWorksheet(11)
->                       .GenerateWorkbookBytes("ANIMALS");
+```text
+var reportBytes = reportGenerator
+                      .AddWorksheet(monkeyData, "Monkeys")
+                          .ConfigureColumn("name_row", "Animal Name")
+                          .ConfigureColumn("id_row", "Animal ID #")
+                          .ConfigureColumn("sex_row", "Animal Sex")
+                          .FinalizeWorksheet(12)
+                      .AddWorksheet(kangarooData, "Kangaroos")
+                          .ConfigureColumn("name_row", "Animal Name")
+                          .ConfigureColumn("id_row", "Animal ID #")
+                          .FinalizeWorksheet(11)
+                      .GenerateWorkbookBytes("ANIMALS");
+```
 
 Congratulations, you've just generated your very first Excel report by 'dotting your way to success'!  Now, let's break this down a little to help you understand what's going on.
 
